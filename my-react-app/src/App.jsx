@@ -47,9 +47,9 @@
 
 
 
-Using props 
-read only properties that are shared between components
-A parent component can send data to a child component
+// Using props 
+// read only properties that are shared between components
+// A parent component can send data to a child component
 
 import Student from "./Student.jsx"
 function App() {
