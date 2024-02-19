@@ -47,24 +47,24 @@
 
 
 
-//Using props 
-// read only properties that are shared between components
-// A parent component can send data to a child component
+Using props 
+read only properties that are shared between components
+A parent component can send data to a child component
 
-// import Student from "./Student.jsx"
-// function App() {
-//   return(
-//     <>
-//       <Student name="Spongebob" age={30} isStudent={true}/>
-//       <Student name="Patrick" age={42} isStudent={false}/>
-//       <Student name="Asmita" age={25} isStudent={true}/>
-//       <Student name="Aman" age={12} isStudent={true}/>
-//       <Student name="Karina" age={12} isStudent={true}/>
-//       <Student name="Sirjana" age={26} isStudent={true}/>
-//       <Student name="Aarosh" age={5} isStudent={true}/>
-//     </>
-//   );
-// }
+import Student from "./Student.jsx"
+function App() {
+  return(
+    <>
+      <Student name="Spongebob" age={30} isStudent={true}/>
+      <Student name="Patrick" age={42} isStudent={false}/>
+      <Student name="Asmita" age={25} isStudent={true}/>
+      <Student name="Aman" age={12} isStudent={true}/>
+      <Student name="Karina" age={12} isStudent={true}/>
+      <Student name="Sirjana" age={26} isStudent={true}/>
+      <Student name="Aarosh" age={5} isStudent={true}/>
+    </>
+  );
+}
 
 
 import UserGreeting from './UserGreeting.jsx'
