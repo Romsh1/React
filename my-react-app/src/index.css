@@ -54,7 +54,7 @@ Using Props */
  */
 
 
- .welcome-msg {
+ /* .welcome-msg {
   font-size: 2.5rem;
   background-color: greenyellow;
   color: #fff;
@@ -72,3 +72,71 @@ Using Props */
   margin: 0;
 
  }
+
+ .list-category {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: hsl(0, 0%, 20%);
+  margin-bottom: 10px;
+  text-align: center;
+  border: 3px solid;
+  border-radius: 5px;
+  background-color: hsl(185, 100%, 50%);
+ }
+
+ .list-items {
+  font-size: 2em;
+  list-style: none;
+  color: hsl(0, 0%, 25%);
+  text-align: center;
+  margin: 0;
+ }
+
+ .list-items li:hover {
+  color: hsl(0, 0%, 45);
+  cursor: pointer;
+ }
+
+ .btn {
+  background-color: red;
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+ }
+
+ .img {
+  width: 150px;
+  height: 150px;
+  cursor: pointer;
+ } */
+
+
+ /* Styling
+ Counter App */
+ /* .counter-container{
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+
+ .count-display{
+  font-size: 10em;
+  margin-top: 0;
+  margin-bottom: 50px;
+ }
+
+ .counter-button{
+  width: 150px;
+  height: 50px;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 0px 5px;
+  background-color: aqua;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+ }
+
+ .counter-button:hover {
+  background-color: aqua;
+ } */
