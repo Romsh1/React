@@ -2,6 +2,8 @@
 // import Footer from './Footer.jsx'
 // import Food from './Food.jsx'
 
+import MyComponent from "./MyComponent";
+
 // function App() {
 //   return(
 //     <>
@@ -122,11 +124,25 @@
 
 // Counter 
 //         App
-import MyComponent from './MyComponent.jsx'
-import Counter from './MyComponent.jsx'
+// import MyComponent from './MyComponent.jsx'
+// import Counter from './MyComponent.jsx'
 
-function App(){
-  return<MyComponent />
+// function App(){
+//   return<MyComponent />
+// }
+
+
+// Day 17
+// Color Picker App
+// import ColorPicker from "./ColorPicker.jsx"
+
+// function App(){
+//   return(<ColorPicker />)
+// }
+
+
+
+function App (){
+  return(<MyComponent />);
 }
-
 export default App
