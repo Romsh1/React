@@ -2,6 +2,7 @@
 // import Footer from './Footer.jsx'
 // import Food from './Food.jsx'
 
+import { useEffect } from "react";
 import MyComponent from "./MyComponent";
 
 // function App() {
@@ -142,7 +143,22 @@ import MyComponent from "./MyComponent";
 
 
 
-function App (){
+// Day 18
+// to-do list app
+// import ToDoList from "./ToDoList.jsx";
+// function App (){
+//   return(<ToDoList />);
+// }
+
+
+// // useEffect() -> React hook that tells React do some code when:
+// //   - This component re-render
+// //   - This component mounts
+// //   - This state of a value
+
+//   useEffect(function, [dependencies]);
+
+function App(){
   return(<MyComponent />);
 }
 export default App
