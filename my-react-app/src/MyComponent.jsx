@@ -1,5 +1,8 @@
 // import React, {useState} from 'react';
 
+import { useEffect } from "react";
+import { useState } from "react";
+
 // function MyComponent(){
 //     //useState function returns an array with 2 elements, a variable and a setter func
 //     const [name, setName] = useState("Guest");
@@ -278,34 +281,66 @@
 
 
 //Displaying the size of window using hooks
-import React, {useState, useEffect} from "react";
+// import React, {useState, useEffect} from "react";
+// function MyComponent() {
+//     const [width, setWidth] = useState(window.innerWidth);
+//     const [height, setHeight] = useState(window.innerHeight);
+
+//     useEffect(() => {
+//         window.addEventListener("resize", handleResize);
+//         console.log("Event listener added");
+
+//         return () => {
+//             window.removeEventListener("resize", handleResize);
+//             console.log("Event listener removed");
+//         }
+//     }, []);
+
+//     useEffect(() =>{
+//         document.title = `Size: ${width} x ${height}`;
+//     }, [width, height]);
+
+
+//     function handleResize(){
+//         setHeight(window.innerHeight);
+//         setWidth(window.innerWidth);
+//     }
+
+//     return(<>
+//                 <p>Window Width: {width}px</p>
+//                 <p>Window Height: {height}px</p>
+//             </>);
+// }
+
+
+
+// useRef() = use reference - does not cause re-renders when its
+// value changes
+// import React, {useState, useEffect, useRef} from "react";
+// function MyComponent() {
+
+//     const inputRef = useRef(null);
+
+//     useEffect(() => {
+//         console.log("COMPONENT RENDERED");
+//     });
+
+//     function handleClick(){
+//         inputRef.current.focus();
+//         inputRef.current.style.backgroundColor = "yellow";
+//     }
+
+//     return(<div>
+//                 <button onClick={handleClick}>
+//                     Click me!
+//                 </button>
+//                 <input ref={inputRef}/>
+//             </div>
+//     );
+// }
+
+
 function MyComponent() {
-    const [width, setWidth] = useState(window.innerWidth);
-    const [height, setHeight] = useState(window.innerHeight);
-
-    useEffect(() => {
-        window.addEventListener("resize", handleResize);
-        console.log("Event listener added");
-
-        return () => {
-            window.removeEventListener("resize", handleResize);
-            console.log("Event listener removed");
-        }
-    }, []);
-
-    useEffect(() =>{
-        document.title = `Size: ${width} x ${height}`;
-    }, [width, height]);
-
-
-    function handleResize(){
-        setHeight(window.innerHeight);
-        setWidth(window.innerWidth);
-    }
-
-    return(<>
-                <p>Window Width: {width}px</p>
-                <p>Window Height: {height}px</p>
-            </>);
+    return(<></>);
 }
 export default MyComponent;

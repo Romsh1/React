@@ -2,9 +2,10 @@
 // import Footer from './Footer.jsx'
 // import Food from './Food.jsx'
 
-import { useEffect } from "react";
-import MyComponent from "./MyComponent";
-import DigitalClock from "./DigitalClockApp/DigitalClock";
+// import { useEffect } from "react";
+// import MyComponent from "./MyComponent";
+// import DigitalClock from "./DigitalClockApp/DigitalClock";
+// import Stopwatch from "./Stopwatch";
 
 // function App() {
 //   return(
@@ -189,11 +190,29 @@ import DigitalClock from "./DigitalClockApp/DigitalClock";
 // useContext() = React hook that allows us to share values
 //                 between multiple levels of components without passing
 //                 props through each level
-import ComponentA from "./ComponentA.jsx";
-import React from "react";
-function App() {
-    return(
-              <ComponentA />
-          );
+// import ComponentA from "./ComponentA.jsx";
+
+
+//useRef() hook
+// import MyComponent from "./MyComponent.jsx";
+// // import React from "react";
+// function App() {
+//     return(
+//               <MyComponent />
+//           );
+// }
+// export default App;
+
+
+
+import Stopwatch from "./Stopwatch.jsx";
+function App (){
+    return(<>
+                <Stopwatch />
+                <Stopwatch />
+                <Stopwatch />
+                <Stopwatch />
+                <Stopwatch />
+            </>);
 }
 export default App;
