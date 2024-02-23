@@ -244,36 +244,68 @@
 
 
 //useEffect() Hook
+// import React, {useState, useEffect} from "react";
+// function MyComponent(){
+
+//     const [count, setCount] = useState(0);
+//     const [color, setColor] = useState("Green");
+
+
+//     useEffect(() => {
+//         document.title = `Count: ${count} ${color}`;
+//     }, [count, color]);
+
+//     function addCount(){
+//         setCount(c => c + 1);
+//     }
+
+//     function subtractCount(){
+//         setCount(c => c - 1);
+//     }
+
+//     function changeColor(){
+//         setColor(c => c === "Green" ? "Red" : "Green");
+//     }
+
+
+//     return(<>
+//                 <p style={{color}}>Count: {count}</p>
+//                 <button onClick={addCount}>Add</button>
+//                 <button onClick={subtractCount}>Subtract</button>
+//                 <button onClick={changeColor}>Change Color</button>
+//             </>);
+// }
+
+
+//Displaying the size of window using hooks
 import React, {useState, useEffect} from "react";
-function MyComponent(){
-
-    const [count, setCount] = useState(0);
-    const [color, setColor] = useState("Green");
-
+function MyComponent() {
+    const [width, setWidth] = useState(window.innerWidth);
+    const [height, setHeight] = useState(window.innerHeight);
 
     useEffect(() => {
-        document.title = `Count: ${count} ${color}`;
-    }, [count, color]);
+        window.addEventListener("resize", handleResize);
+        console.log("Event listener added");
 
-    function addCount(){
-        setCount(c => c + 1);
+        return () => {
+            window.removeEventListener("resize", handleResize);
+            console.log("Event listener removed");
+        }
+    }, []);
+
+    useEffect(() =>{
+        document.title = `Size: ${width} x ${height}`;
+    }, [width, height]);
+
+
+    function handleResize(){
+        setHeight(window.innerHeight);
+        setWidth(window.innerWidth);
     }
-
-    function subtractCount(){
-        setCount(c => c - 1);
-    }
-
-    function changeColor(){
-        setColor(c => c === "Green" ? "Red" : "Green");
-    }
-
 
     return(<>
-                <p style={{color}}>Count: {count}</p>
-                <button onClick={addCount}>Add</button>
-                <button onClick={subtractCount}>Subtract</button>
-                <button onClick={changeColor}>Change Color</button>
+                <p>Window Width: {width}px</p>
+                <p>Window Height: {height}px</p>
             </>);
 }
-
 export default MyComponent;

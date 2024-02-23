@@ -4,6 +4,7 @@
 
 import { useEffect } from "react";
 import MyComponent from "./MyComponent";
+import DigitalClock from "./DigitalClockApp/DigitalClock";
 
 // function App() {
 //   return(
@@ -158,7 +159,41 @@ import MyComponent from "./MyComponent";
 
 //   useEffect(function, [dependencies]);
 
-function App(){
-  return(<MyComponent />);
+
+
+// Digital
+//       Clock
+//           App
+// import DigitalClock from "./DigitalClockApp/DigitalClock.jsx";
+// function App() {
+//   return(<DigitalClock />);
+// }
+// export default App
+
+
+
+// import React from "react";
+// function App() {
+//   return(<>
+//             <DigitalClock />
+//             <DigitalClock />
+//             <DigitalClock />
+//             <DigitalClock />
+//             <DigitalClock />
+//           </>);
+// }
+// export default App
+
+
+
+// useContext() = React hook that allows us to share values
+//                 between multiple levels of components without passing
+//                 props through each level
+import ComponentA from "./ComponentA.jsx";
+import React from "react";
+function App() {
+    return(
+              <ComponentA />
+          );
 }
-export default App
+export default App;
