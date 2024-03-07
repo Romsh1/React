@@ -1,7 +1,13 @@
 // Day 30
-import { Fragment } from "react";
+// import { Fragment, MouseEvent } from "react";
+interface Props {
+    items: string[];
+    heading: string;
+}
 
-function ListGroup() {
+import { useState } from "react";
+
+function ListGroup(props: Props) {
 
     let items = [
         'New York',
@@ -10,7 +16,16 @@ function ListGroup() {
         'Kathmandu',
         'Dubai'
     ];
-    items = [];
+
+    //to highlight particular items
+    // let selectedIndex = 0;
+
+    //Hook
+    const [selectedIndex, setSelectedIndex] = useState(-1); 
+    // items = [];
+
+    //Event handler
+    // const handleClick = (event: MouseEvent) => console.log(event);
 
     // const message = items.length === 0 ? <p>No item found</p> : null;
 
@@ -33,8 +48,13 @@ function ListGroup() {
                 {/* {items.length === 0 ? <p>No item found</p> : null} */}
                 {items.length === 0 && <p>No item found</p>}
                 <ul className="list-group">
-                    {items.map((item) => (
-                        <li key={item}>{item}</li>
+                    {items.map((item, index) => (
+                        <li 
+                            className={selectedIndex === index ? "list-group-item active" : "list-group-item"} 
+                            key={item} 
+                            onClick={() => {setSelectedIndex(index);}}
+                            >{item}
+                        </li>
                     ))}                
                 </ul>
             </>
