@@ -1,0 +1,13 @@
+# COMPONENTS
+Describe a part of the user interface
+Are re-usable and can be nested inside other components
+
+# COMPONENT Types 
+i. Stateless Functional Component
+JS Functions
+
+ii. Stateful Class Component
+Class extending Component class
+Render method returning HTML
+
+############## FUNCTIONAL COMPONENTS ###############
