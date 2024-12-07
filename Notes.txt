@@ -10,4 +10,26 @@ ii. Stateful Class Component
 Class extending Component class
 Render method returning HTML
 
-############## FUNCTIONAL COMPONENTS ###############
+############## JSX ###############
+JavaScript XML is an extension
+Allows to write XML like code for elements and  components
+
+********** React.CreateElement() is a method used to create React elements
+
+--> JSX DIFFERENCES
+class -> className
+for -> htmlFor
+camelCase property naming convention :
+    onclick -> onClick
+    tabindex -> tabIndex 
+
+###### PROPS
+-> It's a way to pass data from parent to child component
+-> Makes components reusable and dynamic 
+FEATURES:
+1. READ-ONLY - Props are immutable. A child component cannot modify its props
+2. Props follow a unidirectional data flow i.e. from parent to child
+3. Is dynamic in case of data types
+
+
+############ STATE
