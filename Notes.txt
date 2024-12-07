@@ -33,3 +33,11 @@ FEATURES:
 
 
 ############ STATE
+********************** props vs state *********************
+-> props get passed to the component        state is managed within the component
+-> Function params                          Variables declared in the function body
+-> props are immutable                      state can be changed
+-> can be accessed by using
+    props in Functional components          useState Hook in Functional components
+    this.props in Class components          this.state in Class components
+    
