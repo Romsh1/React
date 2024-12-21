@@ -1,5 +1,5 @@
 import './App.css';
-import Fruits from './components/Fruits';
+import Form from './components/Form';
 
 function App() {
   // const person = {
@@ -9,9 +9,19 @@ function App() {
   // };
   return (
     <div className="App">
+      {/* Handling input fields */}
+      <Form />
+
+      {/* State
+      <Counter /> */}
+
+      {/* Event handling */}
+      {/* <Message /> */}
+
+      {/* Props and rendering compoenents in React */}
       {/* <ConditionalComponent /> */}
       {/* <Hello person={person}/> */}
-      <Fruits />
+      {/* <Fruits /> */}
       {/* <Hello name="Sis"/>
       <Hello name="Uncle"/> */}
     </div>
