@@ -12,6 +12,7 @@ dist
 dist-ssr
 *.local
 Search.jsx
+FoodDetails.jsx
 
 # Editor directories and files
 .vscode/*
