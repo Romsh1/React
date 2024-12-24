@@ -1,0 +1,42 @@
+.foodItemContainer {
+    width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgb(0, 0, 0, 0.1);
+    margin: 20px;
+    overflow: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.foodItemImage {
+    max-width: 100%;
+    height: auto;
+}
+
+.foodItemContent {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+.foodItemName {
+    font-size: 1em;
+    font-weight: 600;
+    color: #393e46;
+}
+
+.recipeItemBtn {
+    background-color: #29bb89;
+    border: none;
+    color: white;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 7px;
+}
+
+.btnContainer {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
