@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useEffect } from "react";
 import styles from './foodDetails.module.css';
+import ItemList from "./ItemList.jsx";
 
 export default function FoodDetails({ foodId }) {
     const [food, setFood] = useState({});
@@ -51,6 +52,16 @@ export default function FoodDetails({ foodId }) {
                         </strong>
                     </span>
                 </div>
+
+                <h2>Ingredients</h2>
+                <ItemList food={food} isLoading={isLoading} />
+                {/* Not working for some reasons.  */}
+                {/* {food.extendedIngredients.map((item) => (
+                    <div>
+                        <h3>{item.name}</h3>
+                        <h3>{item.amount}{item.unit}</h3>
+                    </div>
+                ))} */}
 
                 <h2>Instructions</h2>
                 <div className={styles.recipeInstructions}>
